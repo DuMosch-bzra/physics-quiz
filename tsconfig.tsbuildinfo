@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/types.ts","./src/vite-env.d.ts","./src/components/ProgressRuler.tsx","./src/components/QuestionCard.tsx","./src/components/ResultScreen.tsx","./src/components/StartScreen.tsx","./src/data/questions.ts","./src/data/videos.ts"],"version":"5.9.3"}

@@ -7,7 +7,7 @@ interface Props {
 }
 
 function feedbackFor(scorePct: number): string {
-  if (scorePct === 100) return "Full marks — you know this material cold.";
+  if (scorePct === 100) return "Full marks — you know this material well.";
   if (scorePct >= 80) return "Strong result. Revisit the missed topic once more before the exam.";
   if (scorePct >= 50) return "Halfway there. Go back over the topics marked below.";
   return "Worth another full pass through these topics before the exam.";
@@ -47,16 +47,6 @@ export default function ResultScreen({ questions, answers, onRestart }: Props) {
           })}
         </tbody>
       </table>
-
-      <div className="sources">
-        <h2>Sources</h2>
-        <p>
-          Question content and explanations written for this revision set,
-          based on standard introductory mechanics and circuits material
-          (e.g. OpenStax, "University Physics"; Khan Academy, Physics).
-          Replace this list with the exact sources you actually used.
-        </p>
-      </div>
 
       <div className="actions-row">
         <button className="primary-btn" onClick={onRestart}>

@@ -23,7 +23,7 @@ export const questions: Question[] = [
   },
   {
     id: 2,
-    topic: "Free Falls and Throws",
+    topic: "Free Falls 1",
     prompt:
       "A ball is thrown horizontally off a cliff at 15 m/s. Compared to a second ball simply dropped from the same height at the same moment, which ball reaches the ground first?",
     options: [
@@ -43,42 +43,42 @@ export const questions: Question[] = [
   },
   {
     id: 3,
-    topic: "Statics",
+    topic: "Free Falls 2",
     prompt:
-      "A picture frame hangs motionless from a single nail on the wall. What must be true about the forces acting on it?",
+      "A stone is dropped from rest from a height and hits the ground after 2 s. Using g = 9.81 m/s² and ignoring air resistance, how far did it fall?",
     options: [
-      "There are no forces acting on it",
-      "The net force and net torque on it are both zero",
-      "Only the net force is zero; torque can be non-zero",
-      "Gravity is temporarily switched off while it hangs",
+        "39.24 m",
+        "19.62 m",
+        "9.81 m",
+        "4.90 m",
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     explanation:
-      "An object at rest is in static equilibrium: the vector sum of all forces (weight and the nail's reaction/tension) is zero, and the sum of torques about any point is also zero, otherwise the frame would translate or rotate.",
+      "Using the equation for free fall: d = ½gt², where g = 9.81 m/s² and t = 2 s, we get d = ½(9.81)(4) = 19.62 m.",
     wrongAnswerVideos: {
-      0: "statics-a.mp4",
-      2: "statics-c.mp4",
-      3: "statics-d.mp4",
+      0: "free-falls-a-2.mp4",
+      2: "free-falls-c-2.mp4",
+      3: "free-falls-d-2.mp4",
     },
   },
   {
     id: 4,
-    topic: "Circular Motion",
+    topic: "Statics",
     prompt:
-      "An object completes 5 full revolutions around a circle in 10 seconds at constant speed. What is its period T and is its velocity constant?",
+      "A uniform seesaw is balanced with a 40 kg child sitting 1.5 m from the pivot. Where must a 30 kg child sit on the other side to balance it?",
     options: [
-      "T = 2 s; velocity is constant because speed is constant",
-      "T = 2 s; velocity is not constant because direction keeps changing",
-      "T = 0.5 s; velocity is constant",
-      "T = 50 s; velocity is not constant",
+      "1.0 m from the pivot",
+      "1.5 m from the pivot",
+      "2.0 m from the pivot",
+      "2.5 m from the pivot",
     ],
     correctIndex: 1,
     explanation:
-      "Period T = total time / number of revolutions = 10 / 5 = 2 s. Velocity is a vector, so even at constant speed, its direction changes continuously in circular motion, meaning the velocity is not constant — this is exactly why a centripetal acceleration exists.",
+      "For the seesaw to be balanced, the torques about the pivot must be equal and opposite. Using τ = F × r, we have 40 kg × 1.5 m = 30 kg × r, so r = (40 × 1.5) / 30 = 2.0 m.",
     wrongAnswerVideos: {
-      0: "circular-motion-a.mp4",
-      2: "circular-motion-c.mp4",
-      3: "circular-motion-d.mp4",
+      0: "statics-a.mp4",
+      2: "statics-c.mp4",
+      3: "statics-d.mp4",
     },
   },
   {
